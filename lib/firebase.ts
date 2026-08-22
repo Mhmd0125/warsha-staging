@@ -3,13 +3,13 @@ import { getAuth } from 'firebase/auth';
 import { getAnalytics } from 'firebase/analytics';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyClJxjKmMbQTtYnaNSQYGPWfNapOWNhQpA",
-  authDomain: "warsha-360.firebaseapp.com",
-  projectId: "warsha-360",
-  storageBucket: "warsha-360.firebasestorage.app",
-  messagingSenderId: "199246041049",
-  appId: "1:199246041049:web:ba74a7b00fe04cbaed53c8",
-  measurementId: "G-0F76R79ZHD"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
 // Initialize Firebase
